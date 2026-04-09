@@ -2,7 +2,7 @@ import pyrtl
 
 ### DECLARE WIRE VECTORS, INPUT, MEMBLOCK ###
 rf = pyrtl.MemBlock(bitwidth=32, addrwidth=5)
-instr = pyrtl.Input(bitwidth=32)
+instr = pyrtl.Input(bitwidth=32, name='instr')
 
 rs = pyrtl.WireVector(bitwidth=5, name='rs')
 rt = pyrtl.WireVector(bitwidth=5, name='rt')
