@@ -1,0 +1,4 @@
+beq $t1, $t2, 0x10
+jal 0x4
+lw $t4, 4($t7)
+add $a1, $v1, $zero
