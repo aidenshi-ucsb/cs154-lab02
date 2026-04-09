@@ -13,7 +13,7 @@ funct = pyrtl.WireVector(bitwidth=6, name='funct')
 data0 = pyrtl.WireVector(bitwidth=32, name='data0')
 data1 = pyrtl.WireVector(bitwidth=32, name='data1')
 
-alu_out = pyrtl.Output(bitwidth=32, name='alu_out')
+alu_out = pyrtl.WireVector(bitwidth=32, name='alu_out')
 
 ### DECODE INSTRUCTION AND RETRIEVE RF DATA ###
 rs <<= instr[21:26]
